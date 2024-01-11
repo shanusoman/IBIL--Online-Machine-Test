@@ -1,0 +1,205 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.otr {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+header {
+  background-color: orange;
+  height: 65px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 15px;
+  top: 0;
+  margin-bottom: 15px;
+}
+
+nav {
+  background-color: #ddd;
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+nav ul li a:hover {
+  color: #fff;
+  background-color: #ccc;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  min-height: 600px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ddd;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  padding: 15px;
+  font: 300 16px/23px Arial, Helvetica, sans-serif;
+}
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 350px;
+  background-color: purple;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+aside .content {
+  height: 600px;
+  overflow: auto;
+  padding: 15px;
+  font: 300 16px/23px Arial, Helvetica, sans-serif;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+  background-color: yellow;
+  height: 50px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: sticky;
+  bottom: 0;
+}
+
+.time-line-list-view {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #c9bbbb;
+  padding-top: 25px;
+}
+.time-line-list-view ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+.time-line-list-view ul .order-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.time-line-list-view ul .order-1 .outer {
+  text-align: left;
+}
+.time-line-list-view ul .order-1::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #333;
+  position: absolute;
+  right: -35px;
+}
+.time-line-list-view ul .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.time-line-list-view ul .outer strong {
+  font-size: 35px;
+  font-weight: bold;
+}
+.time-line-list-view ul .outer small {
+  font-weight: bold;
+  font-size: 25px;
+}
+.time-line-list-view ul li {
+  position: relative;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+}
+.time-line-list-view ul p {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.outer {
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.time-line-list-view ul .order-2:before {
+  display: none;
+}
